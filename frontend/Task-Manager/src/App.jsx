@@ -17,7 +17,7 @@ import UserDashboard from "./pages/User/UserDashboard";
 import MyTasks from "./pages/User/MyTasks";
 import ViewTaskDetails from "./pages/User/ViewTaskDetails";
 import PrivateRoute from "./routes/PrivateRoute";
-import UserProvider, {UserContext} from "./context/userContext";   // make sure this file exists
+import {UserProvider, UserContext} from "./context/userContext";   // make sure this file exists
 import { Toaster } from "react-hot-toast";
 
 const App = () => {
