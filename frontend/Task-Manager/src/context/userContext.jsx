@@ -8,7 +8,7 @@ export const useUser = () => {
   return useContext(UserContext);
 };
 
-const UserProvider = ({ children }) => {
+export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -66,5 +66,5 @@ const updateUser = (userData) => {
   );
 };
 
-export default UserProvider;
+
 
