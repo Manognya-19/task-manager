@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,7 +17,8 @@ import UserDashboard from "./pages/User/UserDashboard";
 import MyTasks from "./pages/User/MyTasks";
 import ViewTaskDetails from "./pages/User/ViewTaskDetails";
 import PrivateRoute from "./routes/PrivateRoute";
-import {UserProvider, UserContext} from "./context/userContext";   // make sure this file exists
+import { UserProvider } from "./context/userContext";
+import { UserContext } from "./context/userContext";  // make sure this file exists
 import { Toaster } from "react-hot-toast";
 
 const App = () => {
